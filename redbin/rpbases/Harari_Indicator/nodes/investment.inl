@@ -1,0 +1,80 @@
+[INVESTMENT1]
+CAPTION=AMOUNT OF CAPITAL REGISTERED
+NODEHINT=INVESTMENT Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=INVESTMENT1TRI
+TABLINK2=INVESTMENT1FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[INVESTMENT1TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.INVE1
+
+/----------------table section-------------------------------------
+[INVESTMENT1FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node-----------------------------------
+
+
+[INVESTMENT2]
+CAPTION=INVESTOR WHO HAVE RECEIVED INVESTMENT OFFICE CERTAFICATE
+NODEHINT=INVESTMENT Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=INVESTMENT2TRI
+TABLINK2=INVESTMENT2FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[INVESTMENT2TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.INVE2
+
+/----------------table section-------------------------------------
+[INVESTMENT2FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node -----------------------------------
+
+
+[INVESTMENT3]
+CAPTION=JOB OPPORTUNITY CREATED BY INVESTMENT SECTOR
+NODEHINT=INVESTMENT Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=INVESTMENT3TRI
+TABLINK2=INVESTMENT3FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[INVESTMENT3TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.INVE3
+
+/----------------table section-------------------------------------
+[INVESTMENT3FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node -----------------------------------
+

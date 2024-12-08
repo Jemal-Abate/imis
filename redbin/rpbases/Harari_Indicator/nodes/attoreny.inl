@@ -1,0 +1,77 @@
+[GENERAL_ATTORENY1]
+CAPTION=NUMBER OF CRIME COMMITTED BY TYPE OF CRIME
+NODEHINT=attoreny Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=GENERAL_ATTORENY1TRI
+TABLINK2=GENERAL_ATTORENY1FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[GENERAL_ATTORENY1TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.GAT
+
+/----------------table section-------------------------------------
+[GENERAL_ATTORENY1FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node-----------------------------------
+
+
+[GENERAL_ATTORENY2]
+CAPTION=DEFENDENTS INVOLVED IN CRIME BY SEX,AGE,EDUCATION LEVEL AND WORK STATUS 
+NODEHINT=attoreny Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=GENERAL_ATTORENY2TRI
+TABLINK2=GENERAL_ATTORENY2FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[GENERAL_ATTORENY2TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.GAT2
+
+/----------------table section-------------------------------------
+[GENERAL_ATTORENY2FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node -----------------------------------
+[GENERAL_ATTORENY3]
+CAPTION=GENERAL ATTORENY KPI
+NODEHINT=attoreny Indicators
+NODETYPE=CINTP
+NODESTYLE=ESTILO_CINTP1
+
+TABLINK1=GENERAL_ATTORENY3TRI
+TABLINK2=GENERAL_ATTORENY3FREQ
+DECIMALS=2
+
+/--------------parameter section---------------------------------------
+
+[GENERAL_ATTORENY3TRI]
+NODETYPE=MULTIFILTER
+NODESTYLE=STYLE_NOFILTER_POP
+
+TRIVAR3N=1
+TRIVAR31=INDIC.GAT3
+
+/----------------table section-------------------------------------
+[GENERAL_ATTORENY3FREQ]
+NODETYPE=TALLY
+NODESTYLE=STYLE_FREQ_NOFILTER
+
+/------------------end of the node -----------------------------------

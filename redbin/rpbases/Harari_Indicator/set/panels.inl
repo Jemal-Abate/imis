@@ -1,0 +1,29 @@
+//Panels
+//-----------------------------------------------------------------------------
+
+[PANELHEADER]
+HEIGHT=155
+ALIGN=CENTER
+
+PICTURETOP1=0
+PICTURELEFT1=1
+PICTUREHEIGHT1=137
+PICTUREWIDTH1=1300
+PICTUREFILE1=/redatam/images/TEMP.jpg
+PICTUREALT1=Harari Office site
+
+[PANELOUTPUT]
+PICTUREALIGN1=CENTER
+PICTURETOP1=0
+PICTURELEFT1=0
+PICTUREHEIGHT1=390
+PICTUREWIDTH1=600
+PICTUREFILE1=/redatam/images/newharari.jpg
+//PICTUREHREF1=http://redatam.org/
+//PICTUREALT1=Redatam On-Line Process Site
+
+[PANELINDEX]
+WIDTH=270
+
+[PANELRUN]
+SHOWSEL=NO

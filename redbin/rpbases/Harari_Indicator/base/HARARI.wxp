@@ -1,0 +1,258 @@
+[General]
+Name=harari_template.wipX
+Entities=4
+Variables=11
+Created=20231130
+Updated=20231130
+Version=7.0.0.0
+
+[Entity1]
+Name=HARARI
+Child=COUNTRY
+Selectable=NO
+Virtual=NO
+FileName=c:\users\dell\desktop\final template practce\baser\harari_harari.ptr
+
+[Variable1]
+EntName=HARARI
+Name=HARARI
+Label=Identification code
+Type=STRING
+DataSetType=CHR
+FileName=c:\users\dell\desktop\final template practce\baser\harari_harari.rbf
+Size=1
+FieldSize=1
+
+[Entity2]
+Name=COUNTRY
+Parent=HARARI
+Child=PERIOD
+Selectable=YES
+RefCode=AREA_ID
+RefLabel=lookupCountryName
+Virtual=NO
+FileName=c:\users\dell\desktop\final template practce\baser\harari01.ptr
+
+[Variable2]
+EntName=COUNTRY
+Name=COUNTRY
+Label=Country
+Type=INTEGER
+DataSetType=PCK
+FileName=c:\users\dell\desktop\final template practce\baser\harari01.rbf
+Size=3
+FieldSize=10
+NotApplicable=998
+Missing=999
+RangeMin=0
+RangeMax=999
+
+[Variable3]
+EntName=COUNTRY
+Name=AREA_ID
+Label=Country
+Type=STRING
+DataSetType=CHR
+FileName=c:\users\dell\desktop\final template practce\baser\harari02.rbf
+Size=3
+FieldSize=3
+
+[Variable4]
+EntName=COUNTRY
+Name=lookupCountryName
+Label=Country Name
+Type=STRING
+DataSetType=CHR
+FileName=c:\users\dell\desktop\final template practce\baser\harari_lkp8.rbf
+Size=64
+FieldSize=64
+
+[Entity3]
+Name=PERIOD
+Parent=COUNTRY
+Child=INDIC
+Selectable=YES
+RefCode=PERIOD_ID
+Virtual=NO
+FileName=c:\users\dell\desktop\final template practce\baser\harari02.ptr
+
+[Variable5]
+EntName=PERIOD
+Name=YEAR
+Label=Year
+Type=INTEGER
+DataSetType=PCK
+FileName=c:\users\dell\desktop\final template practce\baser\harari04.rbf
+Size=2
+FieldSize=7
+NotApplicable=00
+Missing=99
+RangeMin=1
+RangeMax=98
+ValueLabels=26
+VL1=55 1990
+VL2=56 1991
+VL3=57 1992
+VL4=58 1993
+VL5=59 1994
+VL6=60 1995
+VL7=61 1996
+VL8=62 1997
+VL9=63 1998
+VL10=64 1999
+VL11=65 2000
+VL12=66 2001
+VL13=67 2002
+VL14=68 2003
+VL15=69 2004
+VL16=70 2005
+VL17=71 2006
+VL18=72 2007
+VL19=73 2008
+VL20=74 2009
+VL21=75 2010
+VL22=76 2011
+VL23=77 2012
+VL24=78 2013
+VL25=79 2014
+VL26=80 2015
+
+[Variable6]
+EntName=PERIOD
+Name=PERIOD_ID
+Label=Year
+Type=STRING
+DataSetType=CHR
+FileName=c:\users\dell\desktop\final template practce\baser\harari05.rbf
+Size=2
+FieldSize=2
+ValueLabels=26
+VL1=55 1990
+VL2=56 1991
+VL3=57 1992
+VL4=58 1993
+VL5=59 1994
+VL6=60 1995
+VL7=61 1996
+VL8=62 1997
+VL9=63 1998
+VL10=64 1999
+VL11=65 2000
+VL12=66 2001
+VL13=67 2002
+VL14=68 2003
+VL15=69 2004
+VL16=70 2005
+VL17=71 2006
+VL18=72 2007
+VL19=73 2008
+VL20=74 2009
+VL21=75 2010
+VL22=76 2011
+VL23=77 2012
+VL24=78 2013
+VL25=79 2014
+VL26=80 2015
+
+[Entity4]
+Name=INDIC
+Parent=PERIOD
+Selectable=YES
+RefCode=INDIC_CODE
+Virtual=NO
+FileName=c:\users\dell\desktop\final template practce\baser\harari03.ptr
+
+[Variable7]
+EntName=INDIC
+Name=SEX
+Label=SEX
+Type=INTEGER
+DataSetType=PCK
+FileName=c:\users\dell\desktop\final template practce\baser\harari06.rbf
+Size=3
+FieldSize=7
+NotApplicable=100
+Missing=101
+RangeMin=0
+RangeMax=99
+ValueLabels=3
+VL1=1 Male
+VL2=2 Female
+VL3=3 Total
+
+[Variable8]
+EntName=INDIC
+Name=VALUE
+Label=Data value
+Type=REAL
+DataSetType=DBL
+FileName=c:\users\dell\desktop\final template practce\baser\harari07.rbf
+Decimals=1
+FieldSize=11
+NotApplicable=100000000000
+Missing=100000000001
+RangeMin=-9999999999
+RangeMax=99999999999
+
+[Variable9]
+EntName=INDIC
+Name=INDIC_CODE
+Label=Indicator
+Type=STRING
+DataSetType=CHR
+FileName=c:\users\dell\desktop\final template practce\baser\harari08.rbf
+Size=4
+FieldSize=4
+
+[Variable10]
+EntName=INDIC
+Name=INDIC
+Label=Indicator
+Type=INTEGER
+DataSetType=PCK
+FileName=c:\users\dell\desktop\final template practce\baser\harari09.rbf
+Size=4
+FieldSize=14
+NotApplicable=0000
+Missing=9999
+RangeMin=0
+RangeMax=9999
+
+[Variable11]
+EntName=INDIC
+Name=AGE
+Label=AGE
+Type=INTEGER
+DataSetType=PCK
+FileName=c:\users\dell\desktop\final template practce\baser\harari10.rbf
+Size=2
+FieldSize=5
+NotApplicable=00
+Missing=24
+RangeMin=1
+RangeMax=23
+ValueLabels=23
+VL1=15 Burundi
+VL2=16 Comoros
+VL3=17 Eritrea
+VL4=18 Ethiopia
+VL5=18 Kenya
+VL6=2 Lesotho
+VL7=6 Mozambique
+VL8=3 Namibia
+VL9=21 Rwanda
+VL10=22 Uganda
+VL11=1 South Africa
+VL12=14 Zambia
+VL13=5 Zimbabwe
+VL14=8 Angola
+VL15=4 Botswana
+VL16=9 DRC
+VL17=20 Madacascar
+VL18=10 Malawi
+VL19=11 Mauritius
+VL20=12 Seychelles
+VL21=23 South Sudan
+VL22=7 Swaziland
+VL23=13 Tanzania
+
