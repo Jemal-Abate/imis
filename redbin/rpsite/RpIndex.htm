@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>R+SP Index Page</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <script type="text/javascript" src="/redatam/js/jquery-current.min.js"></script>
+  <script type="text/javascript" src="/redatam/js/ui/jquery-ui-current.min.js"></script>
+
+  <script type="text/javascript" src="/redatam/js/red.accordion.js"></script>
+
+  <!-- <link type="text/css" rel="stylesheet" href="/redatam/css/red.accordion.css" /> -->
+
+  <link type="text/css" rel="stylesheet" href="<#THEME>" />
+<style>
+  .ui-accordion .ui-accordion-header{
+    display: block;
+    padding: 13px 5px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 13px;
+    position: relative;
+    background: #22b3c1;
+    border-radius: 0%;
+    margin-top: -5px;
+  }
+  
+ 
+
+  .ui-state-default .ui-icon{
+    background-color: rgb(247, 245, 245);   
+  }
+  .ui-state-active .ui-icon{
+    background-color: red;
+  }
+  .sidebar ul li a{
+    display: block;
+    /* padding: 13px 5px; */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #10558d;
+    /* color: rgb(241, 237, 237); */
+    font-size: 10px;
+    position: relative;
+    text-decoration:none !important;
+    text-transform:uppercase;
+    margin-left: -50px;
+    margin-top: -20px;
+    margin-right: -35px;
+}
+
+/* .sidebar ul li{
+    padding-bottom: -23px;
+} */
+
+ .sidebar ul li a:hover{
+    color: #eff3f5;
+    background:#808c91;
+    /* border-right: 20px solid rgb(5, 68, 104); */
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <div>
+    <div id="menu" class="divAcordeon" >
+    </div>
+  </div>
+  <div id="divMenu" width="<#COLS>"  class="sidebar">
+    <#ITEMLIST>
+  </div>
+</body>
+
+</html>
